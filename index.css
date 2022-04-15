@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "iranyekan";
+    src: url("fonts/iranyekanwebextrabold.woff");
+}
+
+@font-face {
+    font-family: "iranyekanmed";
+    src: url("fonts/iranyekanwebmedium.woff");
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.active {
+    color: #0d839e !important;
+}
+
+.center {
+    align-items: center;
+}
+
+.btn {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #39b73a;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.m-bottom {
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: "iranyekan";
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main__right {
+    flex: 24%;
+    background-color: #016b83;
+    height: 100vh;
+}
+
+.main__right__nav {
+    height: 10%;
+}
+
+.main__right__elements {
+    height: 90vh;
+    align-content: space-between;
+}
+
+.main__right__elements div {
+    width: 100%;
+    height: fit-content;
+}
+
+.main__right__elements__top {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.main__right__elements__middle {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: "iranyekanmed";
+}
+
+.main__right__elements__btn {
+    margin-bottom: 130px;
+    width: 40%;
+}
+
+.main__left {
+    flex: 76%;
+    background: white;
+    height: 100vh;
+}
+
+.main__left__cards {
+    height: 90%;
+}
+
+.main__left__card {
+    flex: 25%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.card-information {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.card-information:hover {
+    cursor: pointer;
+}
+
+.card-icon {
+    color: aliceblue;
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    padding-top: 30px;
+}
+
+.nav {
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    order: -1;
+    flex: 100%;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    font-family: "iranyekanmed";
+    margin-right: 35px;
+}
+
+.nav-log {
+    text-decoration: none;
+    margin-right: auto;
+    color: black;
+    margin-left: 70px;
+}
+
+.nav-log::before {
+    content: "";
+    background: url("photos/chevron-down.svg") no-repeat;
+    width: 30px;
+    height: 11px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.humburger {
+    display: none;
+}
+
+.footer__icon {
+    flex: 10%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1380px) {
+    body {
+        font-size: 13px;
+    }
+    .main__right__elements__middle__title {
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 10px;
+    }
+    .main__right__elements__middle__title {
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    body {
+        font-size: 10px;
+    }
+    .main__right {
+        display: none;
+    }
+    .main__left__card {
+        flex: 33.33333333%;
+    }
+    .footer {
+        width: 100%;
+        background-color: #0d839e;
+        height: 10vh;
+        display: flex !important;
+        margin-top: 300px;
+    }
+    .footer__icon {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    body {
+        font-size: 10px;
+    }
+    .nav {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        display: flex !important;
+        height: 10vh;
+        order: 1;
+        overflow: hidden;
+    }
+    .humburger {
+        display: block;
+        background-image: url(photos/list.svg);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .nav-log {
+        margin-left: 20px;
+    }
+    .nav-item {
+        display: none;
+    }
+    .main__left__cards {
+        margin-top: 10vh;
+    }
+    .main__left__card {
+        flex: 100%;
+        height: 80vh;
+    }
+    #m-bottom {
+        margin-bottom: 10vh;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        right: 0;
+        width: 100%;
+        background-color: #0d839e;
+        height: 10vh;
+        display: flex !important;
+    }
+}
